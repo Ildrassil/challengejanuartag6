@@ -30,6 +30,27 @@ if (isAdmin){
     console.log("isAdmin is evaluated as truthy.");
 }if (!isAdmin) {console.log("isAdmin is false");}
 
+function printChristmasTree(n:number): void{
+    for (let i = 0; i < n; i++) {
+        // space between the Stars
+        const space = " ".repeat(n-i-1);
+        //Printing out the Stars for each row
+        const stars:string = "*".repeat(2 * i + 1);
+        console.log(space + stars);
+    }
+
+
+    for (let i = 0; i < n; i++) {
+        console.log(" ".repeat(n-1) + "*");
+
+    }
+
+    }
+
+
+
+const n: number = 5;
+printChristmasTree(n);
 
 
 
